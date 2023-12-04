@@ -3,7 +3,7 @@ import { Player } from "../models/player.js";
 
 class PlayerServices{
     adjustPoints(playerName, points){
-        let selectedPlayer = AppState.player.find(player => player.name == playerName)
+        let selectedPlayer = AppState.players.find(player => player.name == playerName)
         selectedPlayer.points += points
     }
 
