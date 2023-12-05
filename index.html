@@ -41,13 +41,11 @@
 
   <!-- SECTION -->
   <main class="container">
-    <section class="row justify-content-center">
-      <button  onclick="addPlayerForm()" class="col-4 btn btn-info mt-2">Add Player</button>
-      <!-- <form action=""></form> -->
+    <section class="row align-items-center flex-column">
 
-    <form class="addPlayer" onsubmit="app.PlayerController.addPlayer(event)">
+    <form class="addPlayer col-4 m-2" onsubmit="app.PlayerController.addPlayer(event)">
       <div class="d-flex">
-        <input id="newPlayer" placeholder="Name" type="text" name="name" />
+        <input id="newPlayer" placeholder="New Player" type="text" name="name" />
         <button class="btn btn-outline-info" type="submit">submit</button>
       </div>
     </form>
