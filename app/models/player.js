@@ -12,7 +12,7 @@ export class Player{
         playerTemplate(){
 
             return`
-            <div id='${this.name}' class="col-4 w-10 text-center justify-content-center">
+            <div id='${this.name}' class="col-3 w-10 text-center justify-content-center m-2">
 
             <h3>${this.name}</h3>
 

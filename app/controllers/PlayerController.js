@@ -26,8 +26,16 @@ export class PlayerController{
         this.drawPlayers()
     }
 
-    addPlayer(name){
-        let newName = window.prompt('name?')
+    addPlayerForm(){
+
+    }
+
+    addPlayer(event){
+        event.preventDefault()
+        console.log(document.querySelector("input").value)
+        let newPlayerName = document.querySelector('input').value
+        document.querySelector('input').value = null
+        playerService.addPlayer(newPlayerName)
         this.drawPlayers()
     }
 
